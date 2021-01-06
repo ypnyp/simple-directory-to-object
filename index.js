@@ -1,7 +1,7 @@
 'use strict';
 
-import { readdirSync, statSync } from 'fs';
-import { join, resolve, dirname } from 'path';
+const { readdirSync, statSync } =  require('fs');
+const { join, resolve, dirname } = require('path');
 let defaultOptions = {
     extensions: ['js', 'json', 'coffee'],
     recurse: true,
@@ -83,5 +83,4 @@ function requireDirectory(m, path, options) {
     return retval
 }
 
-export default requireDirectory;
-export const defaults = defaultOptions;
+module.exports = {requireDirectory, defaults: defaultOptions};
