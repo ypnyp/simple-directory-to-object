@@ -1,5 +1,5 @@
 {
-  "name": "simple-directory-to-object",
+  "name": "dir2obj",
   "version": "1.0.0",
   "description": "Converts a whole directory recursively to usable NodeJS modules and objects",
   "main": "index.js",
